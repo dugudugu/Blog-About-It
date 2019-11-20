@@ -42,4 +42,4 @@ def create_or_edit_post(request, pk=None):
             return redirect(post_detail, post.pk)
     else:
         form = BlogPostForm(instance=post)
-    return render(request, 'blogpostform.html', {'form': form})
+    return render(request, "blogpostform.html", {'form': form})
